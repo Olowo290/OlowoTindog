@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin: 0;
+    font-size:62.5%;
+    font-family:'Poppins', sans-serif;
+    color: #FFF;
+}
+.full-width{
+    width: 100%;
+}
+.main{
+    margin: 0 auto;
+}
+.first-section{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+}
+.icon1,.icon3{
+    width: 4rem;
+}
+.icon2{
+    width: 6rem;
+}
+.second-section{
+    position: relative;
+    padding: 3px;
+}
+.second-section .dog-img{
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+}
+#like-img,#nope-img{
+    display: none;
+    position: absolute;
+    top: 10%;
+    left: 20px;
+    width: 100em;
+    transform: rotate(-30deg);
+}
+.caption{
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+}
+#name{
+    font-weight: 600;
+    font-size: 2.3rem;
+}
+#bio{
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin-top: 4px;
+}
+.third-sec{
+    margin-top: 5px;
+    margin-bottom: 3px;
+    text-align: center;
+}
+.third-sec div{
+   display: inline-block;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 3px 8px 12px -6px rgba(0,0,0,0.68);
+}
+button{
+    background: transparent;
+    border: none;
+    outline:none;
+    cursor: pointer;
+}
+.nope:hover{
+    background:#FFE7EF;
+    transition: .3s;
+}
+.like:hover{
+    background:#DBFFF4;
+    transition: .3s;
+}
+@media screen and (min-width:500px){
+    main{
+        width: 400px;
+        box-shadow: -2px -1px 27px -2px rgba(0,0,0,0.75);
+    }
+    .icon1,.icon2,.icon3{
+        width: 4rem;
+    }
+}
